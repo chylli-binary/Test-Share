@@ -3,6 +3,7 @@ package Test::Share;
 
 use strict;
 use warnings;
+use File::ShareDir;
 
 our $VERSION = '0.001';
 
@@ -22,6 +23,8 @@ Test::Share - Module abstract
 =head1 METHODS
 
 =cut
+
+my $content = File::ShareDir::dist_file("Test-Share",'hello.yml');
 
 1;
 
